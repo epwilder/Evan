@@ -52,15 +52,18 @@
 			transform: translateX(-30px);
 		}
 		section .post {
-			width: 100%;
-			margin: 0 15%;
+			width: 70%;
+			max-width: 1280px;
+			margin: auto;
+		}
+		section .media-container {
+			width: 80%;
+			margin: auto;
 		}
 		/*set the image size and crop overflow*/
-		section .media-container {
+		section .media-viewport {
 			position: relative;
-			width: 800px;
-			height: 450px;
-			margin: auto;
+			height: 50%;
 			overflow: hidden;
 		}
 		/*center the image*/
@@ -72,14 +75,30 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
-
-		img:hover {
-			width: 1000px;
-			transition: all .4s ease-in;
+		figcaption {
+			font-size: .7em;
 		}
-		img {
-			width: 800px;
-			transition: all .6s ease-out;
+
+		@media (min-width: 1000px){
+			img:hover {
+				width: 1200px;
+				transition: all .3s ease-in;
+			}
+			img {
+				width: 1000px;
+				transition: all .5s ease-out;
+			}	
+		}
+
+		@media (max-width: 1000px){
+			img:hover {
+				width: 800px;
+				transition: all .3s ease-in;
+			}
+			img {
+				width: 600px;
+				transition: all .5s ease-out;
+			}	
 		}
 	</style>
 </head>
@@ -97,12 +116,12 @@
 		</div>
 		<article class="post">
 			<figure class="media-container">
-				<div class="media-container">
+				<div class="media-viewport">
 					<img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Gainesville_FL_SFC_main_X_planet01.jpg" alt="">
 				</div>
 				<figcaption>
 						The Kika Silva Pla Planetarium at Santa Fe Community College. Image by MrPoda
-				</figcaption> 
+				</figcaption>
 			</figure>
 			<p>
 				The Kika Silva Pla Planetarium is a hidden gem found at Santa Fe College. I have been to a few events throughout my college career and the shows keep getting better. Being erected in only 2006, the Planetarium provides a small, but immense showing room with a large 360 screen to help truly engulf you in the show. The Planetarium often plays educational shows to help people understand time and space, but is not bounded by it. The planetarium also offers laser shows that have accompanying music. Some shows that run at the Planetarium include Lasers featuring Pink Floyd, Laser featuring The Beatles and simply documentaries focused on lasers or the history of space travel. I have always been very interested in space, which is what originally lead me to going to the Planetarium for the first time. I felt like a kid at the candy shop I was so entranced by the performance the Planetarium put on. The event I decided to attend this time is "Lasers in Space" which is an educational show incorporating an expensive laser machine that the college has rented for a duration of time.
@@ -121,27 +140,44 @@
 			4/16/2018
 		</div>
 		<article class="post">
-			<div class="media-container">
-				<img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Gainesville_FL_Devil%27s_Millhopper_entr01.jpg" alt="">
-			</div>
+			<figure class="media-container">
+				<div class="media-viewport">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Gainesville_FL_Devil%27s_Millhopper_entr01.jpg" alt="">
+				</div>
+				<figcaption>
+						The Kika Silva Pla Planetarium at Santa Fe Community College. Image by MrPoda
+				</figcaption>
+			</figure>
 			<p>
 				Devil's Millhopper is a Gainesville landmark that has been attracting tourists and natives alike since the 19th century. It offers an amazing view of Florida's version of a rainforest environment. The half-mile trail leads to a beautiful sinkhole like none other. The park is located just off of millhopper road and is open from 9:00am - 5:00pm Wednesday through Sunday, only costing a $4.00 admission per vehicle. The park has historic content in the form of fossilized animals, educational signs talking about the park and the environments surrounding the sinkhole. If you have never been and live in/visit Gainesville often, you absolutely have to check it out one weekend!
 			</p>
-			<div class="media-container">
-				<img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Devil%27s_Millhopper.JPG" alt="">
-			</div>
+			<figure class="media-container">
+				<div class="media-viewport">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Devil%27s_Millhopper.JPG" alt="">
+				</div>
+				<figcaption>
+						The Kika Silva Pla Planetarium at Santa Fe Community College. Image by MrPoda
+				</figcaption>
+			</figure>
 			<p>
 				The sinkhole is 120 feet deep and 500 feet across and as you can see by the pictures, there is a large wooden staircase which allows you to descend to get a closer look at the light blue water.
 			</p>
-			<div class="media-container">
-				<img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/DevilsMillhopperHighWater06.jpg" alt="">
-			</div>
+			<figure class="media-container">
+				<div class="media-viewport">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/DevilsMillhopperHighWater06.jpg" alt="">
+				</div>
+				<figcaption>
+						The Kika Silva Pla Planetarium at Santa Fe Community College. Image by MrPoda
+				</figcaption>
+			</figure>
 			<p>
 				The wooden stairway offers a great vantage point to the sinkholes core, and takes you down around the trickling waterfalls surrounding the landmark. For a closer look, check out this video highlighting some of the details of Devils Millhopper.
 			</p>
-			<div class="media-container">
-				<iframe src="https://www.youtube.com/embed/cLo0h_evfY0" width="100%" height="100%"></iframe>
-			</div>
+			<figure class="media-container">
+				<div class="media-viewport">
+					<iframe src="https://www.youtube.com/embed/cLo0h_evfY0" width="100%" height="100%"></iframe>
+				</div>
+			</figure>
 			<p>
 				For more information on the park and directions to get there, please check out their <a href="https://www.floridastateparks.org/park/Devils-Millhopper" target="_blank">official website</a>.
 			</p>	
@@ -154,34 +190,54 @@
 		<div class="date">
 			4/13/2018
 		</div>
-		<div class="media-container">
-			<img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/UF_WauburgNorth_Sign.jpg" alt="">
-		</div>
 		<article class="post">
-		<p>
-			<a href="http://recsports.ufl.edu/outdoors-adventure/lake-wauburg" target="_blank"> Lake Wauburg</a> is one of The University of Florida's most underutilized but amazing stops to make for a chance to boat, bike, play volleyball or frisbee, challenge yourself on the ropes course or just relax by the beautiful water. The Lake is free admission for UF students, Faculty and staff. Don't worry if you are not affiliated with UF, as long as you are with someone with a valid Gator ID, they are allowed up to 4 guests. Lake Wauburg has two separate parks on either side of the lake which offers different activities. The North Park is where you go for your boating experiences and sandy beaches that are great for volleyball. The South Park offers an intricate climbing wall and ropes course that is a test of physical endurance and strength. Other activities include biking, a disc golf course and even waterskiing/wake boarding.
-		</p>
-		<div class="media-container">
-			<img src="https://c1.staticflickr.com/4/3201/2861145937_b051bf43b4_b.jpg" alt="">
-		</div>
-		<p>
-			Check out this interesting article about a wake boarding event that happened in <a href="http://www.gainesville.com/article/LK/20100408/News/604146387/GS/" target="_blank">Lake Wauburg</a> in the past!
-		</p>
-		<p>
-			The Lake offers an array of equipment that you can rent by letting them hold a credit card and your Gator ID as compensation. Some of the rentals include: Paddle Boards, Pedal Boards, Sailboat, Kayaks, John Boats, and much more. The park is very open to explore, so what are you waiting for?
-		</p>
-		<div class="media-container">
-			<img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/UF_WauburgSouth_Structure.jpg" alt="">
-		</div>
-		<p>
-			The picture above shows the ropes course that as you can see is no small feat to overcome. There are multiple courses that you can take for beginner, intermediate and expert climbers.
-		</p>
-		<div class="media-container">
-			<img src="https://c1.staticflickr.com/5/4071/5155802925_df3e02917b_b.jpg" alt="">
-		</div>
-		<p>
-			There are always life guards on duty during hours of operation to ensure the safety of swimmers and boaters. Although, there are quite a few gators (go figure) in the lake so the North Park has a designated swimming area to help separate swimmers from anything in the lake. Take a look at this cool video showing off some of the best views from UF's Lake Wauburg!
-		</p>
+			<figure class="media-container">
+				<div class="media-viewport">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/UF_WauburgNorth_Sign.jpg" alt="">
+				</div>
+				<figcaption>
+						The Kika Silva Pla Planetarium at Santa Fe Community College. Image by MrPoda
+				</figcaption>
+			</figure>
+			<p>
+				<a href="http://recsports.ufl.edu/outdoors-adventure/lake-wauburg" target="_blank">Lake Wauburg</a> is one of The University of Florida's most underutilized but amazing stops to make for a chance to boat, bike, play volleyball or frisbee, challenge yourself on the ropes course or just relax by the beautiful water. The Lake is free admission for UF students, Faculty and staff. Don't worry if you are not affiliated with UF, as long as you are with someone with a valid Gator ID, they are allowed up to 4 guests. Lake Wauburg has two separate parks on either side of the lake which offers different activities. The North Park is where you go for your boating experiences and sandy beaches that are great for volleyball. The South Park offers an intricate climbing wall and ropes course that is a test of physical endurance and strength. Other activities include biking, a disc golf course and even waterskiing/wake boarding.
+			</p>
+			<figure class="media-container">
+				<div class="media-viewport">
+					<img src="https://c1.staticflickr.com/4/3201/2861145937_b051bf43b4_b.jpg" alt="">
+				</div>
+				<figcaption>
+						The Kika Silva Pla Planetarium at Santa Fe Community College. Image by MrPoda
+				</figcaption>
+			</figure>
+			<p>
+				Check out this interesting article about a wake boarding event that happened in <a href="http://www.gainesville.com/article/LK/20100408/News/604146387/GS/" target="_blank">Lake Wauburg</a> in the past!
+			</p>
+			<p>
+				The Lake offers an array of equipment that you can rent by letting them hold a credit card and your Gator ID as compensation. Some of the rentals include: Paddle Boards, Pedal Boards, Sailboat, Kayaks, John Boats, and much more. The park is very open to explore, so what are you waiting for?
+			</p>
+			<figure class="media-container">
+				<div class="media-viewport">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/UF_WauburgSouth_Structure.jpg" alt="">
+				</div>
+				<figcaption>
+						The Kika Silva Pla Planetarium at Santa Fe Community College. Image by MrPoda
+				</figcaption>
+			</figure>
+			<p>
+				The picture above shows the ropes course that as you can see is no small feat to overcome. There are multiple courses that you can take for beginner, intermediate and expert climbers.
+			</p>
+			<figure class="media-container">
+				<div class="media-viewport">
+					<img src="https://c1.staticflickr.com/5/4071/5155802925_df3e02917b_b.jpg" alt="">
+				</div>
+				<figcaption>
+						The Kika Silva Pla Planetarium at Santa Fe Community College. Image by MrPoda
+				</figcaption>
+			</figure>
+			<p>
+				There are always life guards on duty during hours of operation to ensure the safety of swimmers and boaters. Although, there are quite a few gators (go figure) in the lake so the North Park has a designated swimming area to help separate swimmers from anything in the lake. Take a look at this cool video showing off some of the best views from UF's Lake Wauburg!
+			</p>
 		</article>
 	</section>
 		<section>
@@ -191,10 +247,15 @@
 		<div class="date">
 			4/9/2018
 		</div>
-		<div class="media-container">
-			<img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Gainesville_FL_Kanapaha_Botanical_Gardens_sign04.jpg" alt="" style="transform: translate(-50%, -35%);">
-		</div>
 		<article class="post">
+			<figure class="media-container">
+				<div class="media-viewport">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Gainesville_FL_Kanapaha_Botanical_Gardens_sign04.jpg" alt="" style="transform: translate(-50%, -35%);">
+				</div>
+				<figcaption>
+						The Kika Silva Pla Planetarium at Santa Fe Community College. Image by MrPoda
+				</figcaption>
+			</figure>
 		<p>
 			The Kanapaha Botanical Gardens is a beautiful non-profit garden that got its name from the accompanying Kanapaha Lake which spans across a large 250 acre stretch. The garden consists of some of the most beautiful flowers, herbs, plants and landscapes that you will find within Gainesville, Florida. Opening in 1978, the originally 33-acre garden has grown and flourished into a 60+ acre plot of land dedicated to the creation of the public garden. The park was not officially opened to the public until 1987, but has been attracting people from all across the state of Florida ever since. There is an admission fee of $8 but it is well worth every penny. The park hosts events such as the moonlight walk, spring festival and much more. One of my favorite events is the Moonlight Walk. The walk starts once the sun sets and the garden is lit with copious twinkling lights. In addition to the beautiful lighting spectacle, the Alachua Astronomy Club sets up in the clearest part of the gardens to star gaze and show others the beauty of the universe. During the day, you can wander around the garden and read the signs provided to tell you which kinds of plants grow in the garden and other useful information about them. Find out more about the upcoming events, history and other news regarding the <a href="http://kanapaha.org/" target="_blank">Kanapaha Botanical Garden</a>.
 		</p>
@@ -207,34 +268,45 @@
 		<div class="date">
 			3/31/16
 		</div>
-		<div class="media-container">
-			<img src="https://upload.wikimedia.org/wikipedia/commons/3/35/UF_FloridaMuseumOfNaturalHistory.jpg" alt="">
-		</div>
 		<article class="post">
-		<p>
-			The Florida Museum of Natural History offers an array of interesting exhibits that make for an exciting tour! The museum is located on 34th Street and Hull Road. The museum has several concrete exhibits and some that change throughout the year. One of my favorites is the Butterfly Rainforest, allowing visitors to enter a screened in rainforest full of colorful butterflies, birds, moths and more. If you look closely there are a few iguanas hiding also! But this museum has much more to offer than that.
-		</p>
-			<div class="media-container">
-				<iframe src="https://www.youtube.com/embed/2VaZWOouRkA" width="100%" height="100%"></iframe>
-			</div>
-		<p>
-			Even though the Butterfly Rainforest could occupy most for hours, there is still much to see within the Museum of Natural History. Some of the exhibits that are always on display include the Florida Fossils, South Florida and Northwest Florida. These exhibits show some of the early lifestyle of the Indian tribes that once occupied the state of Florida. There are also caves and grass flats that give details on the animals and humans that lived there in a fun and interactive way. This video gives a brief look at a lot of the museum and shows some of its great exhibits, though it doesn't do justice to the real thing!
-		</p>
-			<div class="media-container">
-				<iframe src="https://www.youtube.com/embed/xY3KcrBK-mQ" width="100%" height="100%"></iframe>
-			</div>
-		<p>
-			Another exhibit that is only here for a limited time (but is absolutely worth the visit) is Frogs! A Chorus of Colors. This exhibit brings some of the most beautiful and amazing frogs from around the world right to your finger tips, not to mention the wonderful chorus of croaking and ribbits. Definitely a must see! Check out this video for a closer look at some of these wonderful frogs and a little information about them.
-		</p>
-		<div class="media-container">
-				<iframe src="https://www.youtube.com/embed/aGIvmlQF2Yo" width="100%" height="100%"></iframe>
-			</div>
-		<p>
-			The Florida Museum of Natural History also has accommodations for the little ones as well. The "Discovery Room" is a space designed to engage children in learning but in a fun way. The room includes an interactive wind tunnel, building corner, reading areas and more. It's a great way for families to come together and have fun. The Florida Museum of Natural History is free for students who can show a Gator ID, but otherwise only $3.00 to get general admission. Once inside, the Butterfly Rainforest exhibit and Frogs! A Chorus of Colors cost an additional price to enter, but are well worth every penny, don't let the price scare you off.
-		</p>
-		<p>
-			So when you're looking for your next weekend event, look no more! The Florida Museum of Natural History has so much to offer and it's just waiting for you to come and discover its secrets! For more information about the museum, exhibits, directions, prices, or anything else, check out the <a href="https://www.flmnh.ufl.edu/" target="_blank"> Florida Museum of Natural History</a>.
-		</p>
+			<figure class="media-container">
+				<div class="media-viewport">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/3/35/UF_FloridaMuseumOfNaturalHistory.jpg" alt="">
+				</div>
+				<figcaption>
+						The Kika Silva Pla Planetarium at Santa Fe Community College. Image by MrPoda
+				</figcaption>
+			</figure>
+			<p>
+				The Florida Museum of Natural History offers an array of interesting exhibits that make for an exciting tour! The museum is located on 34th Street and Hull Road. The museum has several concrete exhibits and some that change throughout the year. One of my favorites is the Butterfly Rainforest, allowing visitors to enter a screened in rainforest full of colorful butterflies, birds, moths and more. If you look closely there are a few iguanas hiding also! But this museum has much more to offer than that.
+			</p>
+			<figure class="media-container">
+				<div class="media-viewport">
+					<iframe src="https://www.youtube.com/embed/2VaZWOouRkA" width="100%" height="100%"></iframe>
+				</div>
+			</figure>
+			<p>
+				Even though the Butterfly Rainforest could occupy most for hours, there is still much to see within the Museum of Natural History. Some of the exhibits that are always on display include the Florida Fossils, South Florida and Northwest Florida. These exhibits show some of the early lifestyle of the Indian tribes that once occupied the state of Florida. There are also caves and grass flats that give details on the animals and humans that lived there in a fun and interactive way. This video gives a brief look at a lot of the museum and shows some of its great exhibits, though it doesn't do justice to the real thing!
+			</p>
+			<figure class="media-container">
+				<div class="media-viewport">
+					<iframe src="https://www.youtube.com/embed/xY3KcrBK-mQ" width="100%" height="100%"></iframe>
+				</div>
+			</figure>
+			<p>
+				Another exhibit that is only here for a limited time (but is absolutely worth the visit) is Frogs! A Chorus of Colors. This exhibit brings some of the most beautiful and amazing frogs from around the world right to your finger tips, not to mention the wonderful chorus of croaking and ribbits. Definitely a must see! Check out this video for a closer look at some of these wonderful frogs and a little information about them.
+			</p>
+			<figure class="media-container">
+				<div class="media-viewport">
+					<iframe src="https://www.youtube.com/embed/aGIvmlQF2Yo" width="100%" height="100%"></iframe>
+				</div>
+			</figure>
+			<p>
+				The Florida Museum of Natural History also has accommodations for the little ones as well. The "Discovery Room" is a space designed to engage children in learning but in a fun way. The room includes an interactive wind tunnel, building corner, reading areas and more. It's a great way for families to come together and have fun. The Florida Museum of Natural History is free for students who can show a Gator ID, but otherwise only $3.00 to get general admission. Once inside, the Butterfly Rainforest exhibit and Frogs! A Chorus of Colors cost an additional price to enter, but are well worth every penny, don't let the price scare you off.
+			</p>
+			<p>
+				So when you're looking for your next weekend event, look no more! The Florida Museum of Natural History has so much to offer and it's just waiting for you to come and discover its secrets! For more information about the museum, exhibits, directions, prices, or anything else, check out the <a href="https://www.flmnh.ufl.edu/" target="_blank"> Florida Museum of Natural History</a>.
+			</p>
 		</article>
 	</section>
 </body>
